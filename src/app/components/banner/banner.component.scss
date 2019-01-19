@@ -1,0 +1,54 @@
+.abcp-banner-component{
+  padding: 80px 0;
+
+  .content{
+    color: white;
+    height: 200px;
+    background-color: #b00b1c;
+    border-radius: 20px;
+
+    .text{
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 25px;
+      padding-top: 45px;
+    }
+
+    .action{
+      text-align: center;
+    }
+
+    .btn {
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 200px;
+      border: 2px solid #ffffff;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.45s;
+      transition-duration: 0.45s;
+      -webkit-transition-timing-function: cubic-bezier(0.25, 1, 0.33, 1);
+      transition-timing-function: cubic-bezier(0.25, 1, 0.33, 1);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      font-family: "Montserrat", sans-serif;
+      padding: 10px 35px;
+
+      &:hover {
+        -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        background: #ffffff;
+        color: #000000;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 12px;
+        padding: 6px 14px;
+      }
+    }
+  }
+}

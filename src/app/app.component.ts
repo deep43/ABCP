@@ -21,10 +21,9 @@ const ABCP_TABLE_2: SafeTrust[] = [
   {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'}
 ];
 const ABCP_TABLE_3: SafeTrust[] = [
-  {name: 'Hydrogen', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Helium', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Lithium', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Beryllium', date: '(Nov 30 2018)', action: 'Archive'}
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
 ];
 
 @Component({
