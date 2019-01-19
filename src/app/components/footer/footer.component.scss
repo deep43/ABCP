@@ -2,6 +2,21 @@
   background-color: rgba(24, 24, 24, 0.86);
   position: relative;
 
+  i {
+    color: white;
+    padding: 0 5px;
+  }
+
+  .connect-text{
+    color: white;
+  }
+  .footer-logo-image{
+    height: 50px;
+    width: 60px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+  }
+
   .first-row {
     padding: 20px 0;
     border-bottom: 1px solid #c1c1c1;
@@ -12,7 +27,13 @@
   }
 
   .third-row {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+  }
+  .connect-text-us{
+    margin-right: 15px;
+  }
+  .social-section{
+    padding-top: 10px;
   }
 
   .footer-list {
@@ -35,7 +56,4 @@
   background-color: #b00b1c;
   border: #b00b1c;
   padding: 20px 0;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
 }
