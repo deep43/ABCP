@@ -10,30 +10,36 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <table mat-table [dataSource]="tableData" class="abcp-table">
+        <!--<table mat-table [dataSource]="tableData" class="abcp-table">
 
-          <!--- Note that these columns can be defined in any order.
-                The actual rendered columns are set as a property on the row definition" -->
-          <!-- Name Column -->
+          &lt;!&ndash;- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" &ndash;&gt;
+          &lt;!&ndash; Name Column &ndash;&gt;
           <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let element"> {{element.name}}</td>
           </ng-container>
 
-          <!-- Weight Column -->
+          &lt;!&ndash; Weight Column &ndash;&gt;
           <ng-container matColumnDef="date">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let element" class="date"> {{element.date}}</td>
           </ng-container>
 
-          <!-- Symbol Column -->
+          &lt;!&ndash; Symbol Column &ndash;&gt;
           <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let element" class="action"><span class="chip-span">{{element.action}}</span></td>
           </ng-container>
 
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
+        </table>-->
+
+        <div class="row abcp-table-row mat-table" *ngFor="let row of tableData">
+          <div class="col-lg-6 text abcp-table-col">{{row.name}}</div>
+          <div class="col-lg-3 date abcp-table-col">{{row.date}}</div>
+          <div class="col-lg-3 action abcp-table-col"><span class="chip-span">{{row.action}}</span></div>
+        </div>
       </div>
     </div>
   </div>
