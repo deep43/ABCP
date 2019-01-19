@@ -1,0 +1,29 @@
+.abcp-table-component{
+  padding: 20px 0;
+
+  .chip-span{
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #c1c1c1;
+  }
+
+  .date{
+    text-align: center;
+  }
+
+  .action{
+    text-align: right;
+  }
+
+  .table-title{
+    color: red;
+    padding: 10px;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 20px;
+  }
+
+  .abcp-table{
+    width: 100%;
+  }
+}
