@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
-import {MatIconModule} from '@angular/material';
+import {MatIconModule, MatButtonModule} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   declarations: [FooterComponent],
   exports: [FooterComponent]
