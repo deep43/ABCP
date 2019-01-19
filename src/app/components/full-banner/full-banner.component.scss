@@ -1,0 +1,125 @@
+.full-banner-component{
+  background-color: #b00b1c;
+  height: 350px;
+  position: relative;
+  .backgroudBg {
+    background: rgba(175, 11, 28, 0.94);
+    // background: linear-gradient(
+    //   135deg,
+    //   rgba(175, 11, 28, 0.94) 0%,
+    //   rgba(119, 119, 119, 0.71) 100%
+    // );
+    opacity: 0.95;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .content {
+    padding-top: calc(2vw);
+    padding-bottom: calc(2vw);
+    position: relative;
+    z-index: 4;
+    .header-col {
+      @media only screen and (max-width: 690px) {
+        //padding: 0;
+      }
+    }
+    h1,
+    h2 {
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 35px;
+      @media only screen and (max-width: 690px) {
+        font-size: 22.75px;
+        line-height: 30.55px;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      @media only screen and (max-width: 690px) {
+        font-size: 22.5px;
+        line-height: 30px;
+      }
+      span {
+        font-weight: 400;
+      }
+    }
+    h4 {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 28px;
+      text-align: left;
+      font-family: Roboto;
+      font-weight: 500;
+      font-style: normal;
+      margin-left: -15px;
+    }
+    .contentText {
+      margin-bottom: 40px;
+    }
+    .buttonContainer {
+      margin-top: 2%;
+      .btn {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 200px;
+        border: 2px solid #ffffff;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        -webkit-transition-timing-function: cubic-bezier(0.25, 1, 0.33, 1);
+        transition-timing-function: cubic-bezier(0.25, 1, 0.33, 1);
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 35px;
+
+        &:hover {
+          -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+          -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+          -webkit-transform: translateY(-3px);
+          background: #ffffff;
+          color: #000000;
+        }
+        @media only screen and (max-width: 1000px) {
+          font-size: 12px;
+          padding: 6px 14px;
+        }
+      }
+    }
+  }
+  .video-wrap {
+    position: absolute !important;
+    top: 0;
+    left: 0px;
+    padding-bottom: 0px !important;
+    overflow: hidden;
+
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    @media only screen and (max-width: 1000px) {
+      background: url("../../../assets/images/bg.jpg") 0 0 no-repeat;
+      background-size: cover;
+    }
+    iframe {
+      width: 100vw;
+      height: calc(100vw / 1.77);
+      margin-left: 0px;
+      margin-top: -138px;
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+}
