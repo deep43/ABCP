@@ -1,17 +1,18 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Menu</mat-toolbar>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+               [ngClass]="{hidden: !(isHandset$ | async)}"
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="!(isHandset$ | async)">
+    <mat-toolbar class="mobile-toolbar"><img class="footer-logo-image" src="assets/images/login_logo.png" alt="CIBC"></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#">CIBCCM.com</a>
+      <a mat-list-item href="#">CIBC.com</a>
+      <a mat-list-item href="#">CIBC Websites</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="white" class="header-toolbar">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -20,8 +21,32 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Landing</span>
+      <div class="menu-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="top-link">CIBCCM.com</span>
+              <span class="top-link">CIBC.com</span>
+              <span class="top-link">CIBC Websites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row logo-row">
+          <div class="col-lg-10">
+            <img class="footer-logo-image" src="assets/images/login_logo.png" alt="CIBC">
+            <span >Banking that fits your life</span>
+          </div>
+          <div class="col-lg-2">
+            <a class="logo-row-link">Contact Us</a>
+            <a class="logo-row-link logo-row-link-border">Sign On</a>
+          </div>
+        </div>
+        <div class="row logo-row"></div>
+      </div>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
