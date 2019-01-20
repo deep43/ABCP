@@ -9,7 +9,6 @@ import {SafeTrust} from '../../shared/models/safe-trust';
 export class ABCPTableComponent implements OnInit {
   @Input() tableData: SafeTrust[];
   @Input() title: string;
-  displayedColumns: string[] = ['name', 'date', 'action'];
 
   constructor() { }
 

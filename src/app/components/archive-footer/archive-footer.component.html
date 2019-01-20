@@ -1,0 +1,10 @@
+<div class="archive-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 footer-link-col" *ngFor="let col of columns">
+        <i class="footer-link-icon icofont {{col.iconClass}}"></i>
+        <a href="{{col.link}}" class="footer-link">{{col.linkName}}</a>
+      </div>
+    </div>
+  </div>
+</div>
