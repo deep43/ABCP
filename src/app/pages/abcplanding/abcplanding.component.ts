@@ -2,31 +2,31 @@ import { Component, OnInit } from '@angular/core';
 import {SafeTrust} from '../../shared/models/safe-trust';
 
 const ABCP_TABLE_1: SafeTrust[] = [
-  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive'}
+  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'}
 ];
 const ABCP_TABLE_2: SafeTrust[] = [
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive'}
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 French', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 English', date: '(Dec 10 2015)', action: 'Archive', actionLink: '/archive'}
 ];
 const ABCP_TABLE_3: SafeTrust[] = [
-  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
-  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive'},
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
+  {name: 'Safe Trust Series 1996-1 Fact Sheet', date: '(Nov 30 2018)', action: 'Archive', actionLink: '/archive'},
 ];
 
 @Component({
-  selector: 'app-abcplanding',
+  selector: 'abcp-abcplanding',
   templateUrl: './abcplanding.component.html',
   styleUrls: ['./abcplanding.component.scss']
 })
