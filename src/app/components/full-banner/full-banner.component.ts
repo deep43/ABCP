@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'abcp-full-banner',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./full-banner.component.scss']
 })
 export class FullBannerComponent implements OnInit {
+  @Input() buttonName: string;
+  @Input() title: string;
+  @Input() text: string;
+  @Input() videoUrl: string;
 
   constructor() { }
 

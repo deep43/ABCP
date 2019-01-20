@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {SafeTrust} from '../../shared/models/safe-trust';
 
 @Component({
   selector: 'abcp-table',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./abcptable.component.scss']
 })
 export class ABCPTableComponent implements OnInit {
-  @Input() tableData: string;
+  @Input() tableData: SafeTrust[];
   @Input() title: string;
   displayedColumns: string[] = ['name', 'date', 'action'];
 
