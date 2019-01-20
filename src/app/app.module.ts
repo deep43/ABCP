@@ -29,6 +29,7 @@ import {ABCPLandingModule} from './pages/abcplanding/abcplanding.Module';
     MatCheckboxModule,
     AppRoutingModule,
     ArchiveModule,
+    HeaderModule,
     ABCPLandingModule
   ],
   providers: [],
