@@ -11,9 +11,9 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="row abcp-table-row mat-table" *ngFor="let row of tableData">
-          <div class="col-lg-6 text abcp-table-col">{{row.name}}</div>
-          <div class="col-lg-3 date abcp-table-col">{{row.date}}</div>
-          <div class="col-lg-3 action abcp-table-col"><a class="chip-span" [routerLink]="[row.actionLink]">{{row.action}}</a></div>
+          <div class="col-lg-6 col-sm-6 col-5 text abcp-table-col">{{row.name}}</div>
+          <div class="col-lg-3 col-sm-3 col-4 date abcp-table-col">{{row.date}}</div>
+          <div class="col-lg-3 col-sm-3 col-3 action abcp-table-col"><a class="chip-span" [routerLink]="[row.actionLink]">{{row.action}}</a></div>
         </div>
       </div>
     </div>

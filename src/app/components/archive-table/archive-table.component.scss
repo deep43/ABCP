@@ -16,7 +16,6 @@
     color: rgba(0,0,0,.87);
 
     &:hover{
-      background-color: #b00b1c;
       color: white;
       .chip-span {
         border: 2px solid white;
@@ -27,6 +26,9 @@
   .abcp-table-col{
     padding: 12px 0;
     border-bottom: 1px solid rgba(0,0,0,.12);
+    &:hover {
+      background-color: #b00b1c;
+    }
   }
 
   .date{
