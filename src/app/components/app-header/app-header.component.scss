@@ -28,28 +28,34 @@
 .mobile-toolbar {
   text-align: center;
   border-bottom: 2px solid #b00b1c;
+
+  .black-iocn{
+    color: black;
+    font-size: 18px;
+  }
 }
 
-.mat-drawer-container {
+/*.mat-drawer-container {
   > div {
     z-index: 6;
   }
   .mat-drawer {
     z-index: 6;
   }
+  .mat-drawer-shown {
+    z-index: 6 !important;
+  }
+  .mat-drawer-backdrop {
+    z-index: 6 !important;
+  }
+}*/
+.mat-drawer-transition .mat-drawer-backdrop{}
 
-}
-.mat-drawer-shown {
-  z-index: 6 !important;
-}
-.mat-drawer-backdrop {
-  z-index: 6 !important;
-}
 .mat-drawer-content {
-  z-index: 5;
+  //z-index: 5;
   .mat-toolbar {
     &.mat-white {
-      z-index: 5
+      //z-index: 5
     }
   }
 }
@@ -65,7 +71,7 @@
     padding: 5px 15px;
     font-size: 14px;
     font-weight: normal;
-    color: inherit;
+    color: #0c0a0a;
     text-decoration: none;
 
     &:last-child{

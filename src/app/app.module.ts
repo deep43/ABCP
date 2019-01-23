@@ -3,14 +3,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
-import {AppComponent} from './app.component';
 import {
-  MatButtonModule,
-  MatCheckboxModule,
-  MatIconModule
+  MatCheckboxModule, MatButtonModule, MatIconModule
 } from '@angular/material';
+
+import {AppComponent} from './app.component';
+
 import {FooterModule} from './components/footer/footer.module';
-import {HeaderModule} from './components/header/header.module';
+import {HeaderModule} from './components/app-header/header.module';
 import {ArchiveModule} from './pages/archive/archive.Module';
 import {ABCPLandingModule} from './pages/abcplanding/abcplanding.Module';
 
@@ -28,7 +28,7 @@ import {ABCPLandingModule} from './pages/abcplanding/abcplanding.Module';
     ArchiveModule,
     HeaderModule,
     FooterModule,
-    ABCPLandingModule
+    ABCPLandingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,15 +9,15 @@ import {
   MatToolbarModule,
 } from '@angular/material';
 
-import { HeaderComponent } from './header.component';
+import { AppHeaderComponent } from './app-header.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('AppHeaderComponent', () => {
+  let component: AppHeaderComponent;
+  let fixture: ComponentFixture<AppHeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent],
+      declarations: [AppHeaderComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -31,7 +31,7 @@ describe('HeaderComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(AppHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

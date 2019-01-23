@@ -5,10 +5,10 @@ import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'abcp-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss', '../../../assets/icon/icofont/css/icofont.scss']
+  templateUrl: './app-header.component.html',
+  styleUrls: ['./app-header.component.scss', '../../../assets/icon/icofont/css/icofont.scss']
 })
-export class HeaderComponent {
+export class AppHeaderComponent {
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
