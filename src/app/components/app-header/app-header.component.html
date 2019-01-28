@@ -15,7 +15,6 @@
       <a mat-list-item href="#" class="mobile-menu-link">CIBCCM.com</a>
       <a mat-list-item href="#" class="mobile-menu-link">CIBC.com</a>
       <a mat-list-item href="#" class="mobile-menu-link">CIBC Websites</a>
-      <a mat-list-item href="#" class="mobile-menu-link">Contact Us</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -32,7 +31,15 @@
           <a [routerLink]="'/'"><img class="footer-logo-image" src="assets/images/login_logo.png" alt="CIBC"></a>
         </div>
         <div class="handset-sign-on">
-          <a>Sign On</a>
+          <a (click)="toggleMobileDropdown()"><i class="icofont icofont-abacus-alt"></i></a>
+        </div>
+        <div class="mobile-dropdown-menu" [ngClass]="{'shown' : toggleDropdown}">
+          <a class="dropdown-menu-item">
+            <i class="icofont icofont-ui-contact-list"></i>
+          </a>
+          <a class="dropdown-menu-item">
+            <i class="icofont icofont-login"></i>
+          </a>
         </div>
       </div>
       <div [ngClass]="{hidden: (isHandset$ | async)}" class="menu-row">

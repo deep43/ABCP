@@ -45,6 +45,7 @@
   .black-iocn{
     color: black;
     font-size: 28px;
+    padding-left:15px;
   }
 }
 
@@ -124,6 +125,28 @@
   display: none;
 }
 
+.mobile-toolbar {
+  position: relative;
+  .mobile-dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    &.shown {
+      display: block;
+    }
+
+    .dropdown-menu-item {
+      width: 50%;
+      text-align: center;
+
+      i {
+        font-size: 36px;
+      }
+    }
+  }
+}
 .sidenav {
   width: 80%;
 }
