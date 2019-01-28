@@ -8,7 +8,10 @@
     <mat-nav-list>
       <a mat-list-item href="#" class="mobile-menu-link navigation-bar">
         <i class="icofont icofont-home"></i>
-        Navigation</a>
+        Navigation
+        <i class="icofont icofont-close close-nav"
+           (click)="drawer.toggle()"></i>
+      </a>
       <a mat-list-item href="#" class="mobile-menu-link">CIBCCM.com</a>
       <a mat-list-item href="#" class="mobile-menu-link">CIBC.com</a>
       <a mat-list-item href="#" class="mobile-menu-link">CIBC Websites</a>
@@ -17,16 +20,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary" class="header-toolbar">
-      <!--<button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>demoApp</span>-->
-      <div *ngIf="isHandset$ | async"  class="mobile-toolbar">
+      <div *ngIf="isHandset$ | async" class="mobile-toolbar">
         <button
           type="button"
           aria-label="Toggle sidenav"
@@ -55,7 +49,8 @@
       <div [ngClass]="{hidden: (isHandset$ | async)}" class="container">
         <div class="row logo-row">
           <div class="col-lg-10 col-sm-9">
-            <a [routerLink]="'/'"><img class="footer-logo-image" src="assets/images/cibc_banking_logo.png" alt="CIBC"></a>
+            <a [routerLink]="'/'"><img class="footer-logo-image" src="assets/images/cibc_banking_logo.png"
+                                       alt="CIBC"></a>
           </div>
           <div class="col-lg-2 col-sm-3 link-col">
             <a class="logo-row-link" href="#">Contact Us</a>

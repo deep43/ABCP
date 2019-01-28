@@ -18,13 +18,26 @@
     background-color: #b00b1c;
     color: white;
 
+    .icon-home{
+      padding-right: 5px;
+    }
+
+    .close-nav{
+      position: absolute;
+      right: 0;
+      top: 15px;
+      font-size: 20px;
+    }
+
     i{
       color: white;
-      padding-right: 15px;
+      padding-right: 5px;
     }
   }
 }
-
+.mat-list-option:not(.mat-list-item-disabled):hover, .mat-nav-list .mat-list-item:not(.mat-list-item-disabled):hover{
+  background-color: #b00b1c;
+}
 .mobile-toolbar {
   text-align: center;
   border-bottom: 2px solid #b00b1c;
