@@ -2,8 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
                [ngClass]="{hidden: !(isHandset$ | async)}"
                [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-               [mode]="(isHandset$ | async) ? 'over' : 'side'"
-               [opened]="!(isHandset$ | async)">
+               [mode]="(isHandset$ | async) ? 'over' : 'side'">
     <!--<mat-toolbar>Menu</mat-toolbar>-->
     <mat-nav-list>
       <a mat-list-item href="#" class="mobile-menu-link navigation-bar">
@@ -31,14 +30,18 @@
           <a [routerLink]="'/'"><img class="footer-logo-image" src="assets/images/login_logo.png" alt="CIBC"></a>
         </div>
         <div class="handset-sign-on">
-          <a (click)="toggleMobileDropdown()"><i class="icofont icofont-abacus-alt"></i></a>
+          <a (click)="toggleMobileDropdown()"><i class="feather icon-more-horizontal"></i>
+          </a>
         </div>
-        <div class="mobile-dropdown-menu" [ngClass]="{'shown' : toggleDropdown}">
+        <div class="mobile-dropdown-menu animated fast" [ngClass]="toggleDropdown ? 'shown slideInDown' : ''">
+
           <a class="dropdown-menu-item">
             <i class="icofont icofont-ui-contact-list"></i>
+            <div class="item-text">Contact Us</div>
           </a>
           <a class="dropdown-menu-item">
             <i class="icofont icofont-login"></i>
+            <div class="item-text">Sign On</div>
           </a>
         </div>
       </div>

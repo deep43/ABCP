@@ -6,7 +6,10 @@ import {map} from 'rxjs/operators';
 @Component({
   selector: 'abcp-header',
   templateUrl: './app-header.component.html',
-  styleUrls: ['./app-header.component.scss', '../../../assets/icon/icofont/css/icofont.scss']
+  styleUrls: ['./app-header.component.scss',
+    '../../../assets/icon/icofont/css/icofont.scss',
+    '../../../animations/animation.css'
+  ]
 })
 export class AppHeaderComponent {
   toggleDropdown = false;

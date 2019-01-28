@@ -131,15 +131,24 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 56px;
+    z-index: 5;
+    border: 1px solid white;
 
     &.shown {
-      display: block;
+      display: flex;
     }
 
     .dropdown-menu-item {
       width: 50%;
       text-align: center;
+      padding: 30px 50px;
+      background: #919191;
+      border: 2px solid white;
+
+      .item-text{
+        font-size: 14px;
+      }
 
       i {
         font-size: 36px;
@@ -159,9 +168,9 @@
 }
 
 .handset-sign-on{
-  font-size: 14px;
+  font-size: 30px;
   padding-right: 20px;
-  color: #b00b1c;
+  color: black;
 }
 .mat-sidenav-content {
   .header-toolbar {
