@@ -43,9 +43,9 @@
   border-bottom: 2px solid #b00b1c;
 
   .black-iocn{
-    color: black;
-    font-size: 28px;
-    padding-left:15px;
+    color: #919191;
+    font-size: 26px;
+    margin-left:10px;
   }
 }
 
@@ -122,37 +122,49 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
-.mobile-toolbar {
+.header-content {
   position: relative;
-  .mobile-dropdown-menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 56px;
-    z-index: 5;
-    border: 1px solid white;
+}
+.mobile-dropdown-menu {
+  position: absolute;
+  width: 100%;
+  top: 68px;
+  z-index: 5;
+  border: 1px solid #b00b1c;
 
-    &.shown {
-      display: flex;
+  // Animation
+  max-height: 0;
+  //transition: max-height 0.17s ease-out;
+  overflow: hidden;
+
+  &.shown {
+    display: flex;
+    max-height: 84px;
+    transition: max-height 0.17s ease-in;
+  }
+
+  .dropdown-menu-item {
+    width: 50%;
+    text-align: center;
+    padding: 15px 50px;
+    background: white;
+    border: 1px solid #b00b1c;
+    line-height: 1.5;
+
+    &:hover{
+      color: #919191;
+    }
+    .item-text{
+      font-size: 14px;
+      color: #919191;
     }
 
-    .dropdown-menu-item {
-      width: 50%;
-      text-align: center;
-      padding: 30px 50px;
-      background: #919191;
-      border: 2px solid white;
-
-      .item-text{
-        font-size: 14px;
-      }
-
-      i {
-        font-size: 36px;
-      }
+    i {
+      font-size: 28px;
+      color: #919191;
     }
   }
 }
@@ -164,13 +176,13 @@
   background: inherit;
 }
 .handset-logo{
-  padding-left: 20px;
+  //padding-left: 10px;
 }
 
 .handset-sign-on{
   font-size: 30px;
   padding-right: 20px;
-  color: black;
+  color: #919191;
 }
 .mat-sidenav-content {
   .header-toolbar {
@@ -183,7 +195,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
   }
 }
 
@@ -192,3 +204,33 @@
   top: 0;
   z-index: 1;
 }
+
+/*.mat-icon-button{
+  &:focus{
+    outline: none;
+  }
+  &.cdk-program-focused{
+    background-color: white !important;
+
+    .mat-button-focus-overlay {
+      display: none !important;
+    }
+  }
+
+}*/
+
+.mat-button,
+.mat-icon-button {
+  &:focus{
+    outline: none;
+  }
+  &.cdk-focused,
+  &.cdk-program-focused {
+    background-color: white !important;
+
+    .mat-button-focus-overlay {
+      display: none !important;
+    }
+  }
+}
+

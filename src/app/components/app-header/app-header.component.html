@@ -23,8 +23,9 @@
           type="button"
           aria-label="Toggle sidenav"
           mat-icon-button
-          (click)="drawer.toggle()">
-          <i class="icofont icofont-navigation-menu black-iocn"></i>
+          (click)="drawer.toggle()"
+          class="black-iocn">
+          <i class="icofont icofont-navigation-menu"></i>
         </button>
         <div class="handset-logo">
           <a [routerLink]="'/'"><img class="footer-logo-image" src="assets/images/login_logo.png" alt="CIBC"></a>
@@ -33,18 +34,20 @@
           <a (click)="toggleMobileDropdown()"><i class="feather icon-more-horizontal"></i>
           </a>
         </div>
-        <div class="mobile-dropdown-menu animated fast" [ngClass]="toggleDropdown ? 'shown slideInDown' : ''">
 
-          <a class="dropdown-menu-item">
-            <i class="icofont icofont-ui-contact-list"></i>
-            <div class="item-text">Contact Us</div>
-          </a>
-          <a class="dropdown-menu-item">
-            <i class="icofont icofont-login"></i>
-            <div class="item-text">Sign On</div>
-          </a>
-        </div>
       </div>
+      <div class="mobile-dropdown-menu"
+           [ngClass]="{hidden: !(isHandset$ | async), shown: toggleDropdown}">
+        <a [routerLink]="'/'" class="dropdown-menu-item" (click)="toggleMobileDropdown()">
+          <i class="icofont icofont-ui-contact-list"></i>
+          <div class="item-text">Contact Us</div>
+        </a>
+        <a [routerLink]="'/'" class="dropdown-menu-item" (click)="toggleMobileDropdown()">
+          <i class="icofont icofont-login"></i>
+          <div class="item-text">Sign On</div>
+        </a>
+      </div>
+
       <div [ngClass]="{hidden: (isHandset$ | async)}" class="menu-row">
         <div class="container">
           <div class="row">
@@ -70,6 +73,7 @@
       </div>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <ng-content></ng-content>
+    <ng-content class="header-content">
+    </ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
